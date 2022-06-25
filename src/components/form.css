@@ -1,0 +1,20 @@
+.formContainer{
+    height: 200px;
+}
+
+.formContainer__input{
+    width: 25vw;
+    height: 2rem;
+    font-size: 1.8rem;
+    padding: 1rem;
+    color: #fff;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.error{
+    color: red;
+}
+.pass{
+    color: green;
+}
