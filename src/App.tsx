@@ -8,7 +8,7 @@ function App() {
   return (
     <ContextProvider>
       <div className="AppContainer">
-        <h1>ZipCode Locator</h1>
+        <h1 className='main__title'>US ZipCode Locator</h1>
         <Form/>
         <Display/>
       </div>

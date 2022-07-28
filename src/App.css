@@ -9,3 +9,7 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
 }
+
+.main__title{
+  margin: 5rem 0;
+}

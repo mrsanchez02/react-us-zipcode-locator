@@ -44,6 +44,8 @@ export const Form:FC = () =>{
                 name="zipcode"
                 value={zipcode}
                 onChange={(ev)=>handleChange(ev)}
+                placeholder="Type an US zip-code here..."
+                required
             />
             {error&&<p className="error">Only numbers please!</p>}
             {pass&&<p className="pass">US 5 digit zip code only!</p>}

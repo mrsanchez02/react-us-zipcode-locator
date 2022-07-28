@@ -10,8 +10,14 @@
     color: #fff;
     background: transparent;
     border-radius: 10px;
+    border: 1px solid #fff;
+    outline-style: none;
 }
 
+.formContainer__input:focus{
+    border: none;
+    border: 1px solid greenyellow;
+}
 .error{
     color: red;
 }
