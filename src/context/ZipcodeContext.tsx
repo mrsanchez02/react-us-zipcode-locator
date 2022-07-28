@@ -16,7 +16,7 @@ export const ContextProvider = ({ children }: ContextChildrenType) => {
   const [notFound, setNotFound] = useState<boolean>(false);
 
   const fetchInfo = (search: string): void => {
-    const URL = `https://www.zipcodeapi.com/rest/js-v2VIjVC48tkm20QSnhOt1lCpFxnpzgnJoVAdUwPthT5iJ9z9BkpFyeym0B578ZcF/info.json/${search}/degrees`;
+    const URL = `https://www.zipcodeapi.com/rest/${process.env.REACT_APP_KEY}/info.json/${search}/degrees`;
     fetch(URL)
       .then((resp) => {
         if (resp.status === 404) {
@@ -45,7 +45,7 @@ export const ContextProvider = ({ children }: ContextChildrenType) => {
     if (usZipCode.trim() === "") return;
     fetchInfo(usZipCode);
   }, [usZipCode]);
-
+  console.log(process.env.REACT_APP_KEY);
   return (
     <ZipcodeContext.Provider
       value={{
